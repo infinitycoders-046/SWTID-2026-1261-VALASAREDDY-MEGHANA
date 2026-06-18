@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid py-5">
+
+    <h1 class="text-center mb-4">Dashboard 02</h1>
+
+    <p class="text-center">
+        Analyze advanced housing market insights through interactive visualizations
+        of property features, trends, and sales patterns.
+    </p>
+
+    <div class="tableauPlaceholder" id="viz1781342037178"
+         style="width:100%; height:auto;">
+
+        <noscript>
+            <a href="#">
+                <img alt="Dashboard 2"
+                     src="https://public.tableau.com/static/images/Vi/VisualizingHousingMarketTrendsAnAnalysisofSalesPricesandFeaturesusingTableau-DASHBOARD02/Dashboard2/1_rss.png"
+                     style="border:none; width:100%;">
+            </a>
+        </noscript>
+
+        <object class="tableauViz" style="display:none;">
+
+            <param name="host_url"
+                   value="https%3A%2F%2Fpublic.tableau.com%2F" />
+
+            <param name="embed_code_version" value="3" />
+
+            <param name="name"
+                   value="VisualizingHousingMarketTrendsAnAnalysisofSalesPricesandFeaturesusingTableau-DASHBOARD02/Dashboard2" />
+
+            <param name="tabs" value="no" />
+
+            <param name="toolbar" value="yes" />
+
+            <param name="language" value="en-US" />
+
+        </object>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+    var divElement = document.getElementById("viz1781342037178");
+    var vizElement = divElement.getElementsByTagName("object")[0];
+
+    // Responsive Tableau Dashboard
+    vizElement.style.width = "100%";
+    vizElement.style.height = "850px";
+
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+</script>
+
+{% endblock %}

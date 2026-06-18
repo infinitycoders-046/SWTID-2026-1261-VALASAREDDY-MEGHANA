@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid py-5">
+
+    <h1 class="text-center mb-4">Tableau Story</h1>
+
+    <p class="text-center">
+        Explore the complete journey of housing market analysis through interactive
+        stories highlighting trends, pricing patterns, and key property insights.
+    </p>
+
+    <div class="tableauPlaceholder" id="viz1781342105680"
+         style="width:100%; height:auto;">
+
+        <noscript>
+            <a href="#">
+                <img alt="Story 1"
+                     src="https://public.tableau.com/static/images/Vi/VisualizingHousingMarketTrendsAnAnalysisofSalesPricesandFeaturesusingTableau-STORY/Story1/1_rss.png"
+                     style="border:none; width:100%;">
+            </a>
+        </noscript>
+
+        <object class="tableauViz" style="display:none;">
+
+            <param name="host_url"
+                   value="https%3A%2F%2Fpublic.tableau.com%2F" />
+
+            <param name="embed_code_version" value="3" />
+
+            <param name="name"
+                   value="VisualizingHousingMarketTrendsAnAnalysisofSalesPricesandFeaturesusingTableau-STORY/Story1" />
+
+            <param name="tabs" value="no" />
+
+            <param name="toolbar" value="yes" />
+
+            <param name="language" value="en-GB" />
+
+        </object>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript">
+
+    var divElement = document.getElementById("viz1781342105680");
+    var vizElement = divElement.getElementsByTagName("object")[0];
+
+    // Responsive Tableau Story size
+    vizElement.style.width = "100%";
+    vizElement.style.height = "900px";
+
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+</script>
+
+{% endblock %}

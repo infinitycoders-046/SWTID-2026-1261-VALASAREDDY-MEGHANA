@@ -1,0 +1,260 @@
+/* ============================= */
+/* Global Settings */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 90px;   /* Fixed navbar ki space */
+    background-color: #f2f4f8;
+}
+
+
+/* ============================= */
+/* Navbar */
+/* ============================= */
+
+.custom-navbar {
+
+    background: rgba(10, 25, 45, 0.95);
+    padding: 15px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+
+}
+
+
+.navbar-brand {
+
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+.navbar-brand:hover {
+
+    color: #ffc107;
+
+}
+
+
+.nav-link {
+
+    color: white;
+    margin-left: 25px;
+    font-size: 18px;
+    transition: 0.3s;
+
+}
+
+
+.nav-link:hover {
+
+    color: #ffc107;
+
+}
+
+
+/* Dropdown Menu */
+
+.dropdown-menu {
+
+    border-radius: 10px;
+
+}
+
+
+.dropdown-item {
+
+    font-size: 16px;
+
+}
+
+
+.dropdown-item:hover {
+
+    background-color: #ffc107;
+    color: black;
+
+}
+
+
+/* ============================= */
+/* Hero Section (Home Page) */
+/* ============================= */
+
+.hero {
+
+    min-height: calc(100vh - 90px);
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.55)
+        ),
+        url("../images/housing-3D.jpg");
+
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+}
+
+
+.hero h1 {
+
+    font-size: 65px;
+    font-weight: 700;
+    text-shadow: 0 5px 15px black;
+
+}
+
+
+.hero p {
+
+    font-size: 25px;
+    text-shadow: 0 3px 10px black;
+
+}
+
+
+/* Hero Button */
+
+.hero .btn {
+
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+
+}
+
+
+/* ============================= */
+/* Cards Section */
+/* ============================= */
+
+.feature-card {
+
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+    transition: 0.4s;
+
+}
+
+
+.feature-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+/* ============================= */
+/* About, Dashboard, Story Pages */
+/* ============================= */
+
+.page-content {
+
+    padding: 40px 0;
+
+}
+
+
+.page-content h1 {
+
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+
+.page-content p {
+
+    color: #333;
+    font-size: 20px;
+    line-height: 1.7;
+
+}
+
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+
+.footer {
+
+    background-color: #0a192d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+
+}
+
+
+/* ============================= */
+/* Responsive Design */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+
+    body {
+
+        padding-top: 80px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+
+    .navbar-brand {
+
+        font-size: 24px;
+
+    }
+
+
+    .nav-link {
+
+        margin-left: 0;
+        padding: 10px 0;
+
+    }
+
+}
